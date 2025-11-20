@@ -1,8 +1,10 @@
 import "@testing-library/jest-dom";
 import { render, screen, fireEvent } from "@testing-library/react";
 import CategoryFilter from "../components/CategoryFilter";
-import App from "../components/App";
+import App from "../App";
 import { CATEGORIES } from "../data";
+
+//const CATEGORIES = ["Code", "Food", "Money", "Misc"];
 
 test("displays a button for each category", () => {
   render(<CategoryFilter categories={CATEGORIES} />);
